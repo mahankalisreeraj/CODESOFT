@@ -1,0 +1,98 @@
+body{
+    background-image:repeating-linear-gradient( 90deg,rgba(147, 209, 147, 0.614),lightblue,lightyellow,lightpink,rgba(188, 83, 83, 0.526),rgba(106, 68, 176, 0.541));
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-clip:content-box;
+}
+
+header{
+    margin: 4%;
+    padding-top: 15px;
+    display:grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: "h1  h2  h3";
+    grid-gap:35px;
+}
+
+#h1 {grid-area:h1;}
+#h2 {
+    grid-area:h2;
+    border:3px solid black;
+}
+#h3 {grid-area:h3;}
+
+h1{
+    font-family:monospace;
+    font-size:35px;
+    text-align: center;
+}
+
+p{
+    font-size:20px;
+}
+
+h2,h3{
+    font-family:"Sitka Text";
+    font-size:25px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows:repeat(2,auto);
+    grid-gap:30px;
+}
+
+main img {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding-left: 5px;
+    width: 150px;
+    mix-blend-mode:multiply;
+    filter:brightness(200%);
+    filter:contrast(200%);
+    filter:hue-rotate(50%);
+    margin: 15px;
+}
+  
+main img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 4px solid lightskyblue;
+}
+
+#projects{
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows:repeat(2,auto);
+    grid-gap:30px;
+}
+
+video:hover {
+    box-shadow: 3px 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid rgba(0, 0, 0, 0.555);
+}   
+
+label{
+    font-size:20px;
+    font-family:"Sitka Text";
+    background-color:rgba(0, 0, 0, 0.182);
+}
+
+.skills,.prjts,.resume{
+    padding-bottom:15px;
+}
+
+footer{
+    width:auto;
+    background-color:rgba(0, 0, 0, 0.168);
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    text-align:center;
+}
+
+.p1,.p2,.p3 {
+    margin-bottom:15px;
+}
+
