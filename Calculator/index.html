@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <script src="index.js"></script>
+    <center>
+        <div class="main">
+            <div>
+                <input type="text" id="box"  value="" placeholder="   Enter values........."/>
+                <div>
+                <button onclick="btn_type(1)"  id="one">1</button>
+                <button onclick="btn_type(2)" id="two">2</button>
+                <button onclick="btn_type(3)" id="three">3</button>
+                <button onclick="btn_type('+')" id="plus">+</button>
+                <button onclick="btn_type('-')" id="minus">-</button>
+                </div>
+                <div>
+                <button onclick="btn_type(4)" id="four">4</button>
+                <button onclick="btn_type(5)" id="five">5</button>
+                <button onclick="btn_type(6)" id="six">6</button>
+                <button onclick="btn_type('*')" id="mul">*</button>
+                <button onclick="btn_type('/')" id="divide">/</button>
+                </div>
+                <div>
+                <button onclick="btn_type(7)" id="seven">7</button>
+                <button onclick="btn_type(8)" id="eight">8</button>
+                <button onclick="btn_type(9)" id="nine">9</button>
+                <button onclick="btn_type('%')" id="percent">%</button>
+                <button onclick="btn_type('.')" id="dots">.</button>
+                </div>
+                <div>
+                <button onclick="btn_type(0)" id="zeros">0</button>
+                <button onclick="btn_type('eql')" id="equal">=</button>
+                <button onclick="btn_type('reset')" id="reset">Reset</button>
+                <button onclick="btn_type('back_space')" id="back_space">&larr;</button>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

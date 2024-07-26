@@ -1,0 +1,75 @@
+body{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    align-items:center;
+    text-align:center;
+}
+
+h1{
+    font-size:70px;
+    text-align:center;
+    font-family:Gabriola;
+    font-weight: bolder;
+    margin-top:10vh;
+    color:rgb(0, 0, 0);
+}
+
+button{
+     border-radius: 20%;
+     height:6vh;
+     width:10vh;
+     border: none;
+     font-size:20px;
+     cursor:pointer;
+     margin: 5px;
+}
+
+input{
+    border:none;
+    border-radius:9%;
+    height:20%;
+    width:80%;
+    font-size:15px;
+    font-weight:bolder;
+    margin-bottom:7px;
+}
+
+.main{
+    width:fit-content;
+    align-items: justify    ;
+    background-color:rgba(0, 0, 0, 0.319);
+    border:none;
+    border-radius:15%;
+    box-shadow:10px 9px 7px 9px rgba(0, 0, 0, 0.205);
+    display:grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows:repeat(5,auto);
+    grid-template-areas:
+    "box box box box box"
+    "one two three plus minus"
+    "four five six mul div"
+    "seven eight nine dots percent"
+    "zeros equal reset back_space ";
+    grid-gap:10px;
+    padding:3%;
+}
+
+#box {grid-area:box;grid-column:span 4;}
+#one { grid-area: one; }
+#two { grid-area: two; }
+#three { grid-area: three; }
+#four { grid-area: four; }
+#five { grid-area: five; }
+#six { grid-area: six; }
+#seven { grid-area: seven; }
+#eight { grid-area: eight; }
+#nine { grid-area: nine; }
+#zero { grid-area: zeros; }
+#equal { grid-area: equal; }
+#reset { grid-area: reset; }
+#plus { grid-area: plus; }
+#minus { grid-area: minus; }
+#mul { grid-area: mul; }
+#divide { grid-area: divide; }
+#dot { grid-area: dots;}
+#percent { grid-area: percent; }
+#back_space { grid-area: back_space ;}
