@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        function changes() {
+            var t1 = document.getElementsByClassName('login')[0];
+            var t2 = document.getElementsByClassName('signup')[0];
+
+            if (t1.style.visibility === "visible" || t1.style.visibility === "") {
+                t1.style.visibility = "hidden";
+                t2.style.visibility = "visible";
+            } else {
+                t1.style.visibility = "visible";
+                t2.style.visibility = "hidden";
+            }
+        }
+    </script>
+    <header>
+        <nav>
+            <h1>*** Company PVT LTD.</h1>
+            <ul type="none">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><button>Login</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <center>
+            <div>
+                <button onclick="changes()" class="spl">Login / Signup</button>
+            </div>
+            <section class="c1">
+                <section class="login">
+                    <h3>Log in</h3>
+                    <form autocomplete="on">
+                        <div>
+                            <label for="l1">Email:</label><br />
+                            <input type="email" id="l1" placeholder="  Enter your registered Email address..."
+                                required />
+                        </div>
+                        <div>
+                            <label for="l2">Password:</label><br />
+                            <input type="password" minlength="10" maxlength="20" placeholder="  Enter your Password ..."
+                                required />
+                        </div>
+                        <div>
+                            <button type="submit">Submit</button>
+                        </div>
+                        <div>
+                            <a href="#">Forgot password</a>
+                        </div>
+                    </form>
+                </section>
+                <div class="lines"></div>
+                <section class="signup">
+                    <h3>Sign up</h3>
+                    <form autocomplete="on">
+                        <div>
+                            <label for="s1">Please enter a E-Mail to get started:</label><br />
+                            <input type="email" id="s1" placeholder=" Enter Email..." />
+                        </div>
+                        <div>
+                            <button type="submit"
+                                onclick="alert('Thank You for signing up with our company.')">Submit</button>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </center>
+        <hr />
+        <div>
+            <h2>Why should you register?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim ipsam ab facere sint, minus saepe
+                reprehenderit eos consequuntur quaerat nam deleniti voluptatem natus mollitia, quibusdam unde earum
+                ratione. Ipsa reiciendis voluptas recusandae repudiandae veritatis laborum similique velit sequi nulla
+                hic dicta, eligendi doloremque quos neque debitis, asperiores, fuga voluptate aut facilis rerum iusto
+                voluptates nostrum alias necessitatibus. Eveniet sit ullam dolores. A repellat itaque modi deserunt
+                optio magni aspernatur quos, quam, reiciendis id est et tenetur sapiente aliquid aperiam vitae numquam
+                natus cumque corrupti soluta! Sequi animi, non accusantium dignissimos, nesciunt quam beatae
+                necessitatibus pariatur quos, vero a veniam?</p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>
+                For more details contact,<br />
+                &phone; +46 6558499529<br />
+                &#x2709; ***@gmail.com<br />
+            </p>
+        </div>
+        <div>
+            <p>
+                &copy;All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
